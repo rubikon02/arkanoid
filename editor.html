@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edytor</title>
+    <link rel="stylesheet" href="editor/editor.css">
+    <script src="editor/Editor.js" type="module"></script>
+</head>
+
+<body>
+    <div id="boards">
+        <div id="selectionBoard"></div>
+        <div id="placingBoard"></div>
+    </div>
+    <div id="contextMenu" class="hidden">
+        <!-- <div id="contextMenu" class=""> -->
+        <div id="undo">
+            <div class="name">Undo</div>
+            <div class="shortcut">Ctrl+Z</div>
+        </div>
+        <div id="redo">
+            <div class="name">Redo</div>
+            <div class="shortcut">Ctrl+Y</div>
+        </div>
+        <div id="delete">
+            <div class="name">Delete</div>
+            <div class="shortcut">Del</div>
+        </div>
+        <div id="save">
+            <div class="name">Save to file</div>
+            <div class="shortcut">Ctrl+S</div>
+        </div>
+        <div id="load">
+            <div class="name">Load from file</div>
+            <div class="shortcut">Ctrl+L</div>
+        </div>
+    </div>
+</body>
+
+</html>

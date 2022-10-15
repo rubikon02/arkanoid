@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid</title>
+    <link rel="stylesheet" href="game/game.css">
+    <script src="game/Game.js" type="module"></script>
+</head>
+
+<body>
+    <div id="ui">
+        <label for="fileInput">Załaduj planszę z pliku</label>
+        <input type="file" name="file" id="fileInput" accept="application/json">
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>
+<!-- this.loadInput = document.createElement('input')
+this.loadInput.type = "file"
+this.loadInput.accept = "application/json"
+this.loadInput.onchange = () => {
+const reader = new FileReader();
+reader.readAsText(this.loadInput.files[0], "utf-8");
+reader.onload = (e) => {
+const newFields = JSON.parse(e.target.result)
+this.loadNewFields(newFields)
+this.saveToHistory()
+}
+} -->
